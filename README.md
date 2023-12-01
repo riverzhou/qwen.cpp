@@ -11,9 +11,11 @@ Highlights:
 * [x] Python binding.
 
 Support Matrix:
-* Hardwares: x86/arm CPU, NVIDIA GPU
+* Hardwares: x86/arm CPU, NVIDIA GPU, AMD GPU
 * Platforms: Linux, MacOS
 * Models: [Qwen-LM](https://github.com/QwenLM/Qwen)
+
+![image](https://github.com/riverzhou/qwen.cpp/assets/1277270/2d4a5f1e-4cc4-47d9-985b-717c377c4da0)
 
 ## Getting Started
 
