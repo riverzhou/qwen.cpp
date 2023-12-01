@@ -89,6 +89,13 @@ cuBLAS uses NVIDIA GPU to accelerate BLAS. Add the CMake flag `-DGGML_CUBLAS=ON`
 cmake -B build -DGGML_CUBLAS=ON && cmake --build build -j
 ```
 
+**hipBLAS(ROCm)**
+
+hipBLAS uses AMD GPU to accelerate BLAS. Add the CMake flag `-DGGML_HIPBLAS=ON` to enable it and need set `AMDGPU_TARGETS`.
+```sh
+CC=/opt/rocm/llvm/bin/clang CXX=/opt/rocm/llvm/bin/clang++ cmake -B build -DGGML_HIPBLAS=ON -DAMDGPU_TARGETS=gfx1100 && cmake --build build -j
+```
+
 **Metal**
 
 MPS (Metal Performance Shaders) allows computation to run on powerful Apple Silicon GPU. Add the CMake flag `-DGGML_METAL=ON` to enable it.
